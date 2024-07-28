@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Nexus</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .horizontal-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 1rem;
+            padding-bottom: 1rem;
+        }
+        .horizontal-scroll::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for WebKit browsers */
+        }
+        .scroll-arrow {
+            width: 30px;
+            height: 30px;
+            background-color: #1d4ed8; /* Blue color for the arrow */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .scroll-arrow.left {
+            left: 10px;
+        }
+        .scroll-arrow.right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Dev Nexus</h1>
+            <nav>
+                <a href="#languages" class="text-white px-4">Languages</a>
+                <a href="#tech-fields" class="text-white px-4">Tech Fields</a>
+                <a href="#contact" class="text-white px-4">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="intro" class="text-center py-12">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to Dev Nexus</h2>
+            <p class="text-lg mb-8">Your ultimate resource for learning programming languages and exploring tech fields.</p>
+            <a href="#languages" class="bg-blue-600 text-white px-6 py-3 rounded">Explore Languages</a>
+            <a href="#tech-fields" class="bg-blue-600 text-white px-6 py-3 rounded ml-4">Explore Tech Fields</a>
+        </section>
+        <section id="languages" class="container mx-auto py-12 relative">
+            <h2 class="text-2xl font-semibold mb-6">Popular Programming Languages</h2>
+            <div class="horizontal-scroll">
+                <!-- JavaScript -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p class="text-gray-700 mb-4">JavaScript is a versatile language for building web applications, server-side scripts, and more.</p>
+                    <a href="javascript.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Python -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Python</h3>
+                    <p class="text-gray-700 mb-4">Python is known for its readability and versatility, used in web development, data science, and machine learning.</p>
+                    <a href="python.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Java -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Java</h3>
+                    <p class="text-gray-700 mb-4">Java is used for building cross-platform applications and enterprise-level solutions.</p>
+                    <a href="java.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- C++ -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">C++</h3>
+                    <p class="text-gray-700 mb-4">C++ is an extension of C with object-oriented features, used for high-performance applications.</p>
+                    <a href="cpp.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- C# -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">C#</h3>
+                    <p class="text-gray-700 mb-4">C# is used for developing Windows applications and games with Unity.</p>
+                    <a href="csharp.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Ruby -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Ruby</h3>
+                    <p class="text-gray-700 mb-4">Ruby is known for its elegant syntax and is widely used in web development with Ruby on Rails.</p>
+                    <a href="ruby.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- PHP -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">PHP</h3>
+                    <p class="text-gray-700 mb-4">PHP is used for server-side scripting and building dynamic web pages.</p>
+                    <a href="php.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Swift -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Swift</h3>
+                    <p class="text-gray-700 mb-4">Swift is used for iOS and macOS app development, known for its safety and performance.</p>
+                    <a href="swift.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Go (Golang) -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Go (Golang)</h3>
+                    <p class="text-gray-700 mb-4">Go is known for its simplicity and performance in concurrent programming and cloud services.</p>
+                    <a href="go.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Kotlin -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Kotlin</h3>
+                    <p class="text-gray-700 mb-4">Kotlin is used for Android development and server-side applications with modern features.</p>
+                    <a href="kotlin.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- TypeScript -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">TypeScript</h3>
+                    <p class="text-gray-700 mb-4">TypeScript is a superset of JavaScript that adds static types for building large-scale applications.</p>
+                    <a href="typescript.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Rust -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Rust</h3>
+                    <p class="text-gray-700 mb-4">Rust focuses on safety and performance, used in system programming and high-performance applications.</p>
+                    <a href="rust.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- Solidity -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">Solidity</h3>
+                    <p class="text-gray-700 mb-4">Solidity is used for writing smart contracts on blockchain platforms like Ethereum.</p>
+                    <a href="solidity.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- SQL -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">SQL</h3>
+                    <p class="text-gray-700 mb-4">SQL is used for managing and querying relational databases.</p>
+                    <a href="sql.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- R -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">R</h3>
+                    <p class="text-gray-700 mb-4">R is used for statistical computing and graphics, often used in data analysis and research.</p>
+                    <a href="r.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- MATLAB -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">MATLAB</h3>
+                    <p class="text-gray-700 mb-4">MATLAB is used for numerical computing and algorithm development, often in engineering and science fields.</p>
+                    <a href="matlab.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- SAS -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">SAS</h3>
+                    <p class="text-gray-700 mb-4">SAS is used for advanced analytics, business intelligence, and data management.</p>
+                    <a href="sas.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- SQLite -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">SQLite</h3>
+                    <p class="text-gray-700 mb-4">SQLite is a lightweight, disk-based database used for mobile and desktop applications.</p>
+                    <a href="sqlite.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- MongoDB -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">MongoDB</h3>
+                    <p class="text-gray-700 mb-4">MongoDB is a NoSQL database used for handling large volumes of unstructured data.</p>
+                    <a href="mongodb.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- PostgreSQL -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">PostgreSQL</h3>
+                    <p class="text-gray-700 mb-4">PostgreSQL is a powerful, open-source relational database system.</p>
+                    <a href="postgresql.html" class="text-blue-600">Learn More</a>
+                </div>
+                <!-- MySQL -->
+                <div class="bg-white p-6 rounded shadow flex-none w-64">
+                    <h3 class="text-xl font-bold mb-2">MySQL</h3>
+                    <p class="text-gray-700 mb-4">MySQL is a widely-used relational database management system.</p>
+                    <a href="mysql.html" class="text-blue-600">Learn More</a>
+                </div>
+            </div>
+            <div class="scroll-arrow left" onclick="scrollLeft()">&lt;;</div>
+            <div class="scroll-arrow right" onclick="scrollRight()">&gt;</div>
+        </section>
+  <section id="tech-fields" class="container mx-auto py-12 bg-gray-200 relative">
+    <h2 class="text-2xl font-semibold mb-6">Explore Tech Fields</h2>
+    <div class="relative">
+        <div class="horizontal-scroll">
+            <!-- Web Development -->
+            <div class="bg-white p-6 rounded shadow tech-field w-64">
+                <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                <p class="text-gray-700 mb-4">Learn how to build modern, responsive websites using HTML, CSS, JavaScript, and popular frameworks.</p>
+                <a href="web-development.html" class="text-blue-600">Learn More</a>
+            </div>
+            <!-- App Development -->
+            <div class="bg-white p-6 rounded shadow tech-field w-64">
+                <h3 class="text-xl font-bold mb-2">App Development</h3>
+                <p class="text-gray-700 mb-4">Explore mobile and desktop application development with various languages and frameworks.</p>
+                <a href="app-development.html" class="text-blue-600">Learn More</a>
+            </div>
+            <!-- Data Science -->
+            <div class="bg-white p-6 rounded shadow tech-field w-64">
+                <h3 class="text-xl font-bold mb-2">Data Science</h3>
+                <p class="text-gray-700 mb-4">Analyze and interpret complex data to help make decisions.</p>
+                <a href="data-science.html" class="text-blue-600">Learn More</a>
+            </div>
+            <!-- AI/ML -->
+            <div class="bg-white p-6 rounded shadow tech-field w-64">
+                <h3 class="text-xl font-bold mb-2">AI/ML</h3>
+                <p class="text-gray-700 mb-4">Explore artificial intelligence and machine learning technologies and applications.</p>
+                <a href="ai-ml.html" class="text-blue-600">Learn More</a>
+            </div>
+            <!-- DevOps -->
+            <div class="bg-white p-6 rounded shadow tech-field w-64">
+                <h3 class="text-xl font-bold mb-2">DevOps</h3>
+                <p class="text-gray-700 mb-4">Learn about practices that combine software development and IT operations.</p>
+                <a href="devops.html" class="text-blue-600">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-arrow left" onclick="scrollHorizontally(-1)">&lt;</div>
+        <div class="scroll-arrow right" onclick="scrollHorizontally(1)">&gt;</div>
+    </div>
+</section>
+
+        <section id="contact" class="text-center py-12">
+            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+            <p class="text-lg mb-6">Have any questions or suggestions? Reach out to us!</p>
+            <a href="mailto:info@devnexus.com" class="bg-blue-600 text-white px-6 py-3 rounded">Email Us</a>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Dev Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollHorizontally(direction) {
+            const container = document.querySelector('.horizontal-scroll');
+            const scrollAmount = 300; // Adjust this value as needed
+            container.scrollLeft += (scrollAmount * direction);
+        }
+    </script>
+</body>
+</html>

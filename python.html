@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python - Step-by-Step Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4F46E5;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Learn Python</h1>
+            <nav>
+                <a href="#intro" class="text-white px-4">Introduction</a>
+                <a href="#setup" class="text-white px-4">Setup</a>
+                <a href="#basics" class="text-white px-4">Basics</a>
+                <a href="#examples" class="text-white px-4">Examples</a>
+                <a href="#resources" class="text-white px-4">Resources</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container mx-auto p-6">
+        <section id="intro" class="py-12">
+            <h2 class="text-2xl font-semibold mb-4">Introduction to Python</h2>
+            <p class="text-lg mb-4">Python is a versatile, high-level programming language known for its readability and simplicity. It's widely used for web development, data analysis, artificial intelligence, and more.</p>
+        </section>
+        
+        <section id="setup" class="py-12">
+            <h2 class="text-2xl font-semibold mb-4">Setting Up Python</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-2">Installing Python</h3>
+                <p class="mb-4">To start programming in Python, you need to install it on your computer. Follow these steps:</p>
+                <ol class="list-decimal list-inside mb-4">
+                    <li>Download the Python installer from the <a href="https://www.python.org/downloads/" class="text-blue-600">official website</a>.</li>
+                    <li>Run the installer and follow the setup wizard. Make sure to check the box that says "Add Python to PATH".</li>
+                    <li>Verify the installation by opening a terminal or command prompt and typing <code class="bg-gray-200 px-2 py-1 rounded">python --version</code>. You should see the Python version number.</li>
+                </ol>
+            </div>
+        </section>
+        
+        <section id="basics" class="py-12">
+            <h2 class="text-2xl font-semibold mb-4">Python Basics</h2>
+            <div class="bg-white p-6 rounded shadow mb-4">
+                <h3 class="text-xl font-bold mb-2">Hello, World!</h3>
+                <p class="mb-4">The classic first program is a simple script that outputs "Hello, World!" to the console. Here’s how you write it:</p>
+                <pre class="bg-gray-200 p-4 rounded"><code>print("Hello, World!")</code></pre>
+                <p class="mt-4">To run this program, save it as <code class="bg-gray-200 px-2 py-1 rounded">hello.py</code> and execute it from the command line with <code class="bg-gray-200 px-2 py-1 rounded">python hello.py</code>.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow mb-4">
+                <h3 class="text-xl font-bold mb-2">Python syntax</h3>
+                <p class="mb-4"><b> 1</b>. Introduction to Python Syntax
+
+                    Python is a programming language known for its clean and readable syntax. Understanding Python syntax is essential for writing effective and error-free code. This guide will walk you through the basics of Python syntax, including indentation, comments, variables, data types, and operators.
+                    <br><br>
+                  <b>2</b>. Indentation
+                    
+                    Indentation in Python is crucial because it defines the structure of the code. Unlike many other programming languages that use braces {} or keywords to group statements, Python uses indentation. Proper indentation indicates which statements belong to a particular block of code.</p>
+                <pre class="bg-gray-200 p-4 rounded"><code>def greet(name):
+                    if name:
+                        print(f"Hello, {name}!")
+                    else:
+                        print("Hello, World!")
+                
+                greet("Alice")
+                greet("")</code></pre>
+            </div>
+            <div class="bg-white p-6 rounded shadow mb-4">
+                <h3 class="text-xl font-bold mb-2">Variables and Data Types</h3>
+                <p class="mb-4">Python supports various data types including integers, floats, strings, and lists. Here’s how to use them:</p>
+                <pre class="bg-gray-200 p-4 rounded"><code># Variables and Data Types
+name = "Alice"      # String
+age = 30            # Integer
+height = 5.7        # Float
+is_student = True   # Boolean
+
+print(name)
+print(age)
+print(height)
+print(is_student)</code></pre>
+            </div>
+            
+            <div class="bg-white p-6 rounded shadow mb-4">
+                <h3 class="text-xl font-bold mb-2">Control Structures</h3>
+                <p class="mb-4">Control structures help you make decisions and repeat tasks. Here's an example using if statements and loops:</p>
+                <pre class="bg-gray-200 p-4 rounded"><code># If Statement
+number = 10
+if number > 5:
+    print("Number is greater than 5")
+else:
+    print("Number is 5 or less")
+
+# For Loop
+for i in range(5):
+    print(i)</code></pre>
+            </div>
+        </section>
+        
+        <section id="examples" class="py-12">
+            <h2 class="text-2xl font-semibold mb-4">Python Examples</h2>
+            <div class="bg-white p-6 rounded shadow mb-4">
+                <h3 class="text-xl font-bold mb-2">Basic Calculator</h3>
+                <p class="mb-4">Here's a simple calculator program that adds two numbers:</p>
+                <pre class="bg-gray-200 p-4 rounded"><code# Basic Calculator
+def add(x, y):
+    return x + y
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+print("The sum is:", add(num1, num2))</code></pre>
+            </div>
+            
+            <div class="bg-white p-6 rounded shadow mb-4">
+                <h3 class="text-xl font-bold mb-2">To-Do List</h3>
+                <p class="mb-4">Create a simple to-do list application:</p>
+                <pre class="bg-gray-200 p-4 rounded"><code# To-Do List
+tasks = []
+
+def add_task(task):
+    tasks.append(task)
+
+def show_tasks():
+    for i, task in enumerate(tasks, 1):
+        print(f"{i}. {task}")
+
+while True:
+    action = input("Choose an action (add/show/quit): ").lower()
+    if action == "add":
+        task = input("Enter task: ")
+        add_task(task)
+    elif action == "show":
+        show_tasks()
+    elif action == "quit":
+        break
+    else:
+        print("Invalid action.")</code></pre>
+            </div>
+        </section>
+        
+        <section id="resources" class="py-12">
+            <h2 class="text-2xl font-semibold mb-4">Additional Resources</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="text-xl font-bold mb-2">Useful Links</h3>
+                <ul class="list-disc list-inside mb-4">
+                    <li><a href="https://docs.python.org/3/" class="text-blue-600">Official Python Documentation</a></li>
+                    <li><a href="https://www.w3schools.com/python/" class="text-blue-600">W3Schools Python Tutorial</a></li>
+                    <li><a href="https://www.codecademy.com/learn/learn-python-3" class="text-blue-600">Codecademy's Python Course</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-blue-600 text-white py-4 text-center">
+        <p>&copy; 2024 Developer Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
